@@ -32,10 +32,11 @@
       <organizationUrl>http://wildfly-swarm.io/</organizationUrl>
     </developer>
   </developers>
+
   <scm>
-    <connection>scm:git:git@github.com:wildfly-swarm/wildfly-swarm.git</connection>
-    <developerConnection>scm:git:git@github.com:wildfly-swarm/wildfly-swarm.git</developerConnection>
-    <url>https://github.com/wildfly-swarm/wildfly-swarm</url>
+    <connection>scm:git:git@github.com:wildfly-swarm/TEST-wildfly-swarm.git</connection>
+    <developerConnection>scm:git:git@github.com:wildfly-swarm/TEST-wildfly-swarm.git</developerConnection>
+    <url>https://github.com/wildfly-swarm/TEST-wildfly-swarm</url>
     <tag>HEAD</tag>
   </scm>
 
