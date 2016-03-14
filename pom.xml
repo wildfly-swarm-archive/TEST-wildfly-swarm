@@ -17,6 +17,13 @@
 
   <packaging>pom</packaging>
 
+  <scm>
+    <connection>scm:git:git@github.com:wildfly-swarm/TEST-wildfly-swarm.git</connection>
+    <developerConnection>scm:git:git@github.com:wildfly-swarm/TEST-wildfly-swarm.git</developerConnection>
+    <url>https://github.com/wildfly-swarm/TEST-wildfly-swarm</url>
+    <tag>HEAD</tag>
+  </scm>
+
   <properties>
     <version.swarm.fraction-plugin>1.0.0.Beta2</version.swarm.fraction-plugin>
 
@@ -132,6 +139,19 @@
         </plugin>
       </plugins>
     </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>1.6.3</version>
+        <extensions>true</extensions>
+        <configuration>
+          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+          <serverId>ossrh</serverId>
+          <autoReleaseAfterClose>false</autoReleaseAfterClose>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
   <modules>
     <module>bom</module>
